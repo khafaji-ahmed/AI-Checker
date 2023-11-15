@@ -1,18 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
 h1 {
+  color: #333;
   text-align: center;
+  padding: 20px 0;
 }
 
-#file-drop {
-  width: 300px;
-  height: 200px;
-  border: 2px dashed #ccc;
-  text-align: center;
-  padding: 20px;
-  margin: 0 auto;
+#file-input, #transcribe-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
 }
 
-#browse-files {
-  color: blue;
+#transcribe-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  text-decoration: underline;
+}
+
+#transcribe-button:hover {
+  background-color: #444;
+}
+
+#result, #transcribed-text {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  min-height: 50px;
 }

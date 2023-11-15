@@ -1,3 +1,6 @@
+import { chatFunction } from './chat.js';
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const fileInput = document.getElementById("file-input");
   const resultDiv = document.getElementById("result");
@@ -17,6 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (file) {
       processImage(file);
       resultDiv.textContent = "Transcribing...";
+      
+      
     } else {
       resultDiv.textContent = "No image selected.";
     }
@@ -45,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           resultDiv.textContent = extractedText;
+          chatFunction(extractedText);
         } else {
           resultDiv.textContent = "No text found in the response.";
         }
