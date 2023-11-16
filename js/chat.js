@@ -1,7 +1,7 @@
 export function chatFunction(transcribedText) {
 
     const openaiEndpoint = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-    const openaiApiKey = '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';
+    const openaiApiKey = '';
 
     const input = 'Translate the following English text to French: Good morning, how are you?';
 

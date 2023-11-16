@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   async function processImage(imageFile) {
-    var apiKey = "J390mcFxoFiOLmkEOdyuvg==8uwqfxPlsqiB7cQe"; // Replace with your API key
+    var apiKey = ""; // Replace with your API key
 
     var formData = new FormData();
     formData.append("image", imageFile);
